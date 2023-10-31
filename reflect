@@ -1,0 +1,55 @@
+#functional prompt
+def ascend(array):
+  arr = []
+  
+  for item in array:
+    for i in item:
+      arr.append(i)
+      
+  return sorted(arr)
+
+#oop prompt
+class Podracer:
+  def __init__(self, max_speed, condition, price):
+   self.max_speed = max_speed
+   self.condition = condition
+   self.price = price
+
+  def repair(self):
+    self.condition = "repaired"
+    
+class AnakinsPod(Podracer)
+  def __init__(self, max_speed, condition, price):
+    super().__init__(max_speed, condition, price)
+
+  def boost(self):
+    self.max_speed *= 2
+
+class SebulbasPod(Podracer):
+  def __init__(self, max_speed, condition, price):
+    super.__init__(max_speed, condition, price):
+
+  def flame_jet(self,other):
+    other.condition = "trashed"
+
+# In the solution above, we successfully demonstrate encapsulation, inheritance, and polymorphism. 
+# We first demonstrate encapsulation through the use of classes. Then, by reusing the Podracer
+#  class in the last two classes, we are able to utilize inheritance. The last two classes
+#  (AnakinsPod and SebulasPod) take in and reuse attributes of the parent class Podracer. 
+# Although we do not explicitly use polymorphism, inheritance is a form of polymorphism that is 
+# utilized throughout the code. I believe that object oriented programming was an efficient way 
+# to organize this type of data. Without inheritance, this data would've required a more lengthy 
+# code that would have been more difficult to read and understand. 
+
+#Reflect
+#The two coding paradigms have their own strengths that allow for efficient programming.
+#  In the case of functional programming, we are able to use more logic to create functionalities
+#  in smaller chunks of code. This provides readability which is crucial when working on a 
+# project with others. OOP programming is able to organize data in a visually 
+# "cleaner" way that also provides readability. I personally lean towards OOP for its ability to 
+# organize data better so that i am able to reuse my code in a more efficient matter. When creating
+#  applications that require more logic and calculations, such as games, functional programming may 
+# be the better option. When creating applications that requires the usage and storage of large 
+# amounts of data, like payroll, OOP may be the cleaner option. Functional programming does not 
+# come easily to me, and in order for me to better my understanding I will just have to continue
+# to practice writing functions and solving problems.
